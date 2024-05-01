@@ -1,8 +1,6 @@
 import type {LinksFunction, MetaFunction} from "@remix-run/node"
 import {Links, Meta, Outlet, Scripts, ScrollRestoration} from "@remix-run/react"
 
-import Footer from "~/components/Footer/Footer"
-import Header from "~/components/Header/Header"
 import tailwindStyles from "~/styles/tailwind.css?url"
 
 export const meta: MetaFunction = () => [
@@ -30,17 +28,8 @@ const App = () => {
                 <Links />
             </head>
 
-            <body className="bg-remix-black text-white">
-                <div className="grid min-h-screen grid-rows-layout">
-                    <Header />
-
-                    <div className="p-8">
-                        <Outlet />
-                    </div>
-
-                    <Footer />
-                </div>
-
+            <body>
+                <Outlet />
                 <ScrollRestoration />
                 <Scripts />
             </body>
