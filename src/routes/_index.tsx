@@ -138,7 +138,10 @@ const IndexRoute = () => {
             </section>
 
             <section id="minecraft">
-                <img src="/minecraft.png" alt="minecraft screenshot" />
+                <div className="minecraft">
+                    <img src="/minecraft.png" alt="minecraft screenshot" />
+                </div>
+
                 <Previous to="#demo" />
                 <Next to="#questions" />
             </section>
@@ -148,6 +151,7 @@ const IndexRoute = () => {
                     <h1>Questions</h1>
                     <img src="/bulldog.png" alt="highland park bulldog" />
                 </div>
+
                 <Previous to="#minecraft" />
             </section>
 
