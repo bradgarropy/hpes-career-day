@@ -5,7 +5,7 @@ import tailwindStyles from "~/styles/tailwind.css?url"
 
 export const meta: MetaFunction = () => [
     {charset: "utf-8"},
-    {title: "💿 remix starter"},
+    {title: "💻 career day"},
     {viewport: "width=device-width,initial-scale=1"},
 ]
 

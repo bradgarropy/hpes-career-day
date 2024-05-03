@@ -1,13 +1,5 @@
-import type {MetaFunction} from "@remix-run/node"
-
 import {Next} from "~/components/Next"
 import {Previous} from "~/components/Previous"
-
-export const meta: MetaFunction = () => [
-    {
-        title: "remix starter | home",
-    },
-]
 
 const IndexRoute = () => {
     return (
