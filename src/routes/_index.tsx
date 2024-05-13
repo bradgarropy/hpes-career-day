@@ -28,6 +28,39 @@ const IndexRoute = () => {
                     </a>
                 </div>
 
+                <Next to="#companies" />
+            </section>
+
+            <section id="companies">
+                <h1>Companies</h1>
+
+                <div className="companies">
+                    <a
+                        href="https://microsoft.com"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        <img src="/microsoft.png" alt="microsoft logo" />
+                    </a>
+
+                    <a
+                        href="https://google.com"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        <img src="/google.png" alt="google logo" />
+                    </a>
+
+                    <a
+                        href="https://apple.com"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        <img src="/apple.png" alt="apple logo" />
+                    </a>
+                </div>
+
+                <Previous to="#developer" />
                 <Next to="#education" />
             </section>
 
@@ -51,7 +84,7 @@ const IndexRoute = () => {
                     </a>
                 </div>
 
-                <Previous to="#developer" />
+                <Previous to="#companies" />
                 <Next to="#subjects" />
             </section>
 
