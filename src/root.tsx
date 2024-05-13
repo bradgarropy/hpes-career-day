@@ -5,7 +5,7 @@ import tailwindStyles from "~/styles/tailwind.css?url"
 
 export const meta: MetaFunction = () => [
     {charset: "utf-8"},
-    {title: "💻 career day"},
+    {title: "career day"},
     {viewport: "width=device-width,initial-scale=1"},
 ]
 
@@ -14,6 +14,10 @@ export const links: LinksFunction = () => {
         {
             rel: "stylesheet",
             href: tailwindStyles,
+        },
+        {
+            rel: "icon",
+            href: "https://fav.farm/💻",
         },
     ]
 

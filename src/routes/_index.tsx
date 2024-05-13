@@ -5,7 +5,13 @@ const IndexRoute = () => {
     return (
         <main>
             <section id="developer">
-                <h1>Developer</h1>
+                <a
+                    href="https://kentcdodds.github.io/InfiniteWPM/#/"
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    <h1>Developer</h1>
+                </a>
 
                 <div className="developer">
                     <div>
@@ -41,9 +47,23 @@ const IndexRoute = () => {
 
             <section id="day">
                 <h1>Work day</h1>
-                <p>Work from home</p>
-                <p>9AM - 4PM</p>
-                <p>On call</p>
+
+                <div className="work-day">
+                    <div>
+                        <p>Work from home</p>
+                        <p>9AM - 4PM</p>
+                        <p>On call</p>
+                    </div>
+
+                    <a
+                        href="https://bradgarropy.com/uses"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        <img src="/desk.jpg" alt="desk setup" />
+                    </a>
+                </div>
+
                 <Previous to="#education" />
                 <Next to="#description" />
             </section>
