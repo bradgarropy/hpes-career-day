@@ -13,7 +13,7 @@ const IndexRoute = () => {
                     <h1>Developer</h1>
                 </a>
 
-                <div className="developer">
+                <div className="two-cols">
                     <div>
                         <p>Web developer</p>
                         <p>Software engineer</p>
@@ -34,47 +34,24 @@ const IndexRoute = () => {
             <section id="education">
                 <h1>Education</h1>
 
-                <div className="education">
-                    <p>College</p>
-                    <p>4 years</p>
-                    <p>Bootcamp</p>
-                    <p>12-16 weeks</p>
-                </div>
-
-                <Previous to="#developer" />
-                <Next to="#day" />
-            </section>
-
-            <section id="day">
-                <h1>Work day</h1>
-
-                <div className="work-day">
-                    <div>
-                        <p>Work from home</p>
-                        <p>9AM - 4PM</p>
-                        <p>On call</p>
+                <div className="two-cols">
+                    <div className="education">
+                        <p>College</p>
+                        <p>4 years</p>
+                        <p>Bootcamp</p>
+                        <p>12-16 weeks</p>
                     </div>
 
                     <a
-                        href="https://bradgarropy.com/uses"
+                        href="https://https://www.utexas.edu"
                         target="_blank"
                         rel="noreferrer"
                     >
-                        <img src="/desk.jpg" alt="desk setup" />
+                        <img src="/longhorns.png" alt="ut logo" />
                     </a>
                 </div>
 
-                <Previous to="#education" />
-                <Next to="#description" />
-            </section>
-
-            <section id="description">
-                <h1>Daily work</h1>
-                <p>Write and review code</p>
-                <p>Break down problems</p>
-                <p>Create design documents</p>
-                <p>Meetings</p>
-                <Previous to="#day" />
+                <Previous to="#developer" />
                 <Next to="#subjects" />
             </section>
 
@@ -82,7 +59,50 @@ const IndexRoute = () => {
                 <h1>Subjects</h1>
                 <p>Math & science</p>
                 <p>Anything with logical or critical thinking</p>
-                <Previous to="#description" />
+                <Previous to="#education" />
+                <Next to="#office" />
+            </section>
+
+            <section id="office">
+                <h1>Office</h1>
+
+                <div className="two-cols">
+                    <div>
+                        <p>Work from home</p>
+                        <p>9AM - 4PM</p>
+                        <p>On call</p>
+                    </div>
+
+                    <a href="/desk.jpg" target="_blank" rel="noreferrer">
+                        <img
+                            className="frame"
+                            src="/desk.jpg"
+                            alt="desk setup"
+                        />
+                    </a>
+                </div>
+
+                <Previous to="#subjects" />
+                <Next to="#description" />
+            </section>
+
+            <section id="description">
+                <h1>Daily work</h1>
+
+                <div className="two-cols">
+                    <div>
+                        <p>Write and review code</p>
+                        <p>Break down problems</p>
+                        <p>Create design documents</p>
+                        <p>Meetings</p>
+                    </div>
+
+                    <a href="/vscode.png" target="_blank" rel="noreferrer">
+                        <img src="/vscode.png" alt="vscode setup" />
+                    </a>
+                </div>
+
+                <Previous to="#office" />
                 <Next to="#salary" />
             </section>
 
@@ -95,7 +115,7 @@ const IndexRoute = () => {
                     <p>$250,000</p>
                 </div>
 
-                <Previous to="#subjects" />
+                <Previous to="#description" />
                 <Next to="#interesting" />
             </section>
 
@@ -168,7 +188,6 @@ const IndexRoute = () => {
             </section>
 
             {/* companies */}
-            {/* applications */}
         </main>
     )
 }

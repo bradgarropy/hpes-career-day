@@ -42,7 +42,7 @@ a {
     font-size: 2rem;
 }
 
-.developer {
+.two-cols {
     display: grid;
     grid-template-columns: auto 40vw;
     column-gap: 2rem;
@@ -60,17 +60,10 @@ a {
     font-weight: 700;
 }
 
-.work-day {
-    display: grid;
-    grid-template-columns: auto 40vw;
-    column-gap: 2rem;
-    align-items: center;
-}
-
-.work-day img {
+.frame {
     border-radius: 1rem;
-    border: 3px solid black;
-    box-shadow: 3px 3px 0 black;
+    border: 3px solid white;
+    box-shadow: 3px 3px 0 white;
 }
 
 .salary {
